@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHIPS STORE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#0b0d10;
+--bg-soft:#11141a;
+--text:#d7dce5;
+--muted:#8b93a7;
+--blue:#29b6f6;
+--red:#ff2d2d;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:'Vazirmatn',sans-serif;
+background:radial-gradient(circle at top,#121622,#0b0d10 60%);
+color:var(--text);
+line-height:2;
+}
+
+/* ===== Hero ===== */
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:0 8%;
+}
+
+.brand{
+font-size:64px;
+font-weight:900;
+letter-spacing:3px;
+color:#fff;
+}
+
+.brand span{
+color:var(--blue);
+}
+
+.hero p{
+max-width:700px;
+color:var(--muted);
+font-size:1.05em;
+margin-top:30px;
+}
+
+/* ===== Button ===== */
+.btn{
+position:relative;
+margin-top:50px;
+padding:18px 42px;
+font-size:1.1em;
+font-weight:900;
+border:none;
+border-radius:14px;
+cursor:pointer;
+color:#fff;
+background:linear-gradient(135deg,var(--blue),#1976d2);
+overflow:hidden;
+box-shadow:0 15px 45px rgba(41,182,246,.35);
+}
+
+.btn::after{
+content:'';
+position:absolute;
+top:-20px;
+left:-30px;
+width:160%;
+height:160%;
+background:
+radial-gradient(circle at 20% 30%,var(--red),transparent 40%),
+radial-gradient(circle at 80% 60%,rgba(255,0,0,.6),transparent 45%);
+opacity:.45;
+mix-blend-mode:screen;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 25px 70px rgba(255,45,45,.45);
+}
+
+/* ===== Section ===== */
+section{
+padding:120px 8%;
+background:var(--bg-soft);
+border-top:1px solid rgba(255,255,255,.04);
+}
+
+h2{
+font-size:2.6em;
+font-weight:900;
+color:#fff;
+margin-bottom:40px;
+}
+
+h2 span{
+color:var(--blue);
+}
+
+.long-text{
+max-width:900px;
+color:var(--text);
+}
+
+/* ===== Divider ===== */
+.divider{
+height:1px;
+background:linear-gradient(90deg,transparent,var(--blue),transparent);
+margin:80px 0;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+.brand{font-size:42px}
+.hero{padding:0 6%}
+section{padding:80px 6%}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+<div class="brand">
+CHIPS <span>STORE</span>
+</div>
+
+<p>
+چیپس استور صرفاً یک نام یا یک فروشگاه نیست؛  
+ما یک پروژه‌ی مبتنی بر تفکر سیستمی، اتوماسیون هوشمند و آینده‌نگری دیجیتال هستیم.
+جایی که ربات‌ها فقط کد نیستند، بلکه بخشی از تجربه انسانی در پلتفرم‌های اجتماعی محسوب می‌شوند.
+</p>
+
+<button class="btn">ورود به اکوسیستم</button>
+</div>
+
+<div class="divider"></div>
+
+<!-- ===== ABOUT ===== -->
+<section>
+<h2>
+فلسفه <span>چیپس استور</span>
+</h2>
+
+<div class="long-text">
+<p>
+در دنیایی که ارتباطات با سرعتی فراتر از تصور انسان در حال گسترش است،
+نیاز به ابزارهایی که بتوانند این ارتباطات را مدیریت، تحلیل و بهینه‌سازی کنند
+بیش از هر زمان دیگری احساس می‌شود.
+</p>
+
+<p>
+چیپس استور با تمرکز بر توسعه ربات‌های هوشمند برای بستر روبیکا،
+تلاش می‌کند فاصله بین کاربر عادی و فناوری پیشرفته را به حداقل برساند.
+ما باور داریم تکنولوژی باید در خدمت انسان باشد، نه بالعکس.
+</p>
+
+<p>
+تمامی محصولات ما بر پایه سادگی در استفاده، عمق در منطق و انعطاف‌پذیری بالا طراحی می‌شوند.
+این یعنی هر ربات، یک سیستم زنده است که می‌تواند رشد کند، یاد بگیرد
+و خود را با نیازهای محیط تطبیق دهد.
+</p>
+</div>
+</section>
+
+<!-- ===== VISION ===== -->
+<section>
+<h2>
+مسیر <span>آینده</span>
+</h2>
+
+<div class="long-text">
+<p>
+هدف نهایی ما ایجاد یک اکوسیستم یکپارچه از ربات‌ها، ابزارها و پنل‌های مدیریتی است
+که بتواند نیازهای گروه‌ها، کانال‌ها و کسب‌وکارهای دیجیتال را به‌صورت هوشمند پاسخ دهد.
+</p>
+
+<p>
+چیپس استور فقط شروع یک مسیر است؛
+مسیری که در آن هوش مصنوعی، تعامل انسانی و طراحی دقیق
+در کنار هم معنا پیدا می‌کنند.
+</p>
+</div>
+</section>
+
+</body>
+</html>
